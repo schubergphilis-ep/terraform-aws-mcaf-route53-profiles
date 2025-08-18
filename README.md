@@ -13,7 +13,8 @@ To create a Route53 Profile and associated resources, define the following input
 
 ```hcl
 module "route53_profile" {
-  source = "../../"
+  source  = "schubergphilis/mcaf-route53-profiles/aws"
+  version = "~> 1.0.0"
 
   name = "profile-1"
   associated_resources = {
