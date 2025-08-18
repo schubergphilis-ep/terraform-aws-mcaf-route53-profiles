@@ -1,6 +1,5 @@
 module "route53_profile" {
-  source  = "schubergphilis/mcaf-route53-profiles/aws"
-  version = "~> 1.0.0"
+  source = "../../"
 
   name = "profile-1"
   associated_resources = {
