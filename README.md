@@ -30,13 +30,13 @@ module "route53_profile" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.82 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.82 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 6.0 |
 
 ## Modules
 
@@ -55,6 +55,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_associated_resources"></a> [associated\_resources](#input\_associated\_resources) | A map of Association Names to Resource ARNs to associate with the AWS Route53 Profile | `map(string)` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the Route53 Profile | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | The AWS region where resources will be created; if omitted the default provider region is used | `string` | `null` | no |
 
 ## Outputs
 
